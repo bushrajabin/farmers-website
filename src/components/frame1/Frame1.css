@@ -5,7 +5,7 @@
 }
 
 .frame-main-container {
-  background-image: url(/../../../public/images/bg-image.jpg);
+  background: url('../../../public/images/bg-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
