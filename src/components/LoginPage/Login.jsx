@@ -1,8 +1,13 @@
 import React from "react";
 import "./Login.css";
 import { FaGoogle } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
+  const toBack = () => {
+    navigate("/");
+  };
   return (
     <>
       <div className="background-image"></div> {/* Background image layer */}
@@ -25,7 +30,7 @@ function Login() {
             {" "}
             <input type="checkbox" name="conditions" />
             <label htmlFor="conditions">
-            you are agree to our terms and conditions!
+              you are agree to our terms and conditions!
             </label>
           </div>
           <a href="">ForgotPassword?</a>
@@ -34,7 +39,7 @@ function Login() {
           <div className="login-buttons">
             <button className="login-button">Login</button>
             <p>
-              Don't Have any account?<a href="">SignUp</a>
+              Don't Have any account?<a onClick={toBack}>SignUp</a>
             </p>
             <button className="google-button">
               {" "}
