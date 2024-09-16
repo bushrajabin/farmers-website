@@ -8,6 +8,10 @@ function Frame1() {
   const toLogin=()=>{
     navigate('/login')
   }
+
+  const toSignup=()=>{
+    navigate('/signup')
+  }
   return (
     <div className="frame-main-container">
       <div className="frame-left-side">
@@ -19,7 +23,7 @@ function Frame1() {
       </div>
       <div className="frame-main-buttons">
         <button onClick={toLogin}>Login</button>
-        <button>SignUp</button>
+        <button onClick={toSignup}>SignUp</button>
       </div>
     </div>
   );
