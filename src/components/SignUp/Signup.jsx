@@ -1,7 +1,18 @@
 import React from "react";
 import "./Signup.css";
+import { ImCross } from "react-icons/im";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
+  const navigate = useNavigate();
+
+  const tologin = () => {
+    navigate("/");
+  };
+
+  const toBuyer=()=>{
+    navigate('/buyer')
+  }
   return (
     <div className="signup-main-container">
       <div className="background-form">
@@ -22,10 +33,11 @@ function Signup() {
         <label htmlFor="">confirm password*</label>
         <input type="password" placeholder="Enter Your confirm password" />
       </div>
-      
+
       <div className="singup-option">
+        <ImCross onClick={tologin} className="cursor-pointer" />
         <h3>Are you registering as a buyer or a seller?</h3>
-        <button className="buyer-btn">as a buyer</button>
+        <button className="buyer-btn" onClick={toBuyer}>as a buyer</button>
         <button className="seller-btn">as a seller</button>
       </div>
     </div>
