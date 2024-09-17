@@ -1,6 +1,15 @@
 import React from "react";
 import "./Buyer.css";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import { useNavigate } from "react-router-dom";
 function Buyer() {
+const navigate=useNavigate()
+    const signup=()=>{
+navigate('/')
+toast.success("Signup successfully!!!!")
+    }
   return (
     <div className="buyer-main-container">
       <div className="signup-header">
@@ -19,7 +28,7 @@ function Buyer() {
       <input type="password" placeholder="Enter Your password" />
       <label htmlFor="">confirm password*</label>
       <input type="password" placeholder="Enter Your confirm password" />
-      <button className="signup-button">SignUp</button>
+      <button className="signup-button" onClick={signup}>SignUp</button>
     </div>
   );
 }

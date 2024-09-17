@@ -5,6 +5,7 @@ import Home from "./page/Home";
 import Login from "./components/LoginPage/Login";
 import Signup from "./components/SignUp/Signup";
 import Buyer from "./components/BuyerSignup/Buyer";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -19,6 +20,18 @@ function App() {
 
         </Routes>
       </BrowserRouter>
+
+      
+      {/* This is for toastify */}
+      <ToastContainer
+        position="top-left"
+        autoClose={3000}
+        closeOnClick
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </>
   );
 }
