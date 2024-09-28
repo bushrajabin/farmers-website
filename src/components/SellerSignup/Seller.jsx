@@ -1,6 +1,6 @@
 import React from "react";
 import { sellerField } from "../../Common/Common";
-import "./seller.css";
+import "./Seller.css";
 import { GrFormNextLink } from "react-icons/gr";
 import { useNavigate } from "react-router-dom";
 
