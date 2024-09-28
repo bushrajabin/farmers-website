@@ -4,16 +4,26 @@ body {
     padding: 0px;
 }
 
+.background-blur {
+    background-color: #4c7c8e;
+    height: 100%;
+    filter: blur(7px);
+    position: absolute;
+    width: 100%;
+}
+
 .buyer-main-container {
     width: 30vw;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 70px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     justify-content: center;
+    position: relative;
+    top: 100px;
 }
+
 
 .signup-header {
     text-align: center;
@@ -23,23 +33,36 @@ body {
     margin: 0px;
 }
 
-.buyer-main-container>h3 {
-    font-size: 15px;
+.buyer-field-main-div {
+    background-color: whitesmoke;
+}
+
+.buyer-field-main-div>h3 {
     padding-left: 10px;
-    padding: 10px;
     font-style: italic;
-}
-
-.buyer-main-container>label {
-    padding-left: 17px;
-    font-size: 17px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.buyer-main-container>input {
-    padding: 10px;
-    outline: none;
+    font-size: 18px;
     margin: 10px;
+}
+
+.buyer-field {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.buyer-field>label {
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+}
+
+.buyer-field>input {
+    padding: 6px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    background-color: white;
 }
 
 .signup-button {
@@ -65,7 +88,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 18%;
+        top: 10px;
     }
 
     .signup-button {

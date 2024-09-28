@@ -1,0 +1,140 @@
+.seller-main-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+.seller-top-div {
+    text-align: center;
+    background-image: linear-gradient(to right, #748093, #4c7c8e, #267876, #2e6f4d, #4d611f);
+    padding: 10px;
+    font-size: 20px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.seller-div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.seller-div>label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+.seller-div>input {
+    font-size: 16px;
+    outline: none;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+.submit-next-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e6f4d;
+    width: 190px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* -----------SELLER DETAILS---------- */
+
+.seller-details-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+    margin-top: 80px;
+    background-color: whitesmoke;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.sellerdetails-top-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #748093, #4c7c8e, #267876, #2e6f4d, #4d611f);
+
+}
+
+.seller-details {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+
+.seller-details>label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.seller-details>input {
+    padding: 7px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.submit-btn {
+    width: 100px;
+    background-color: #4d611f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    margin: 7px;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .seller-details-main-container {
+        margin: auto;
+        width: 90vw;
+        margin-top: 80px;
+    }
+
+    .sellerdetails-top-div {
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+    }
+
+    .sellerdetails-top-div>h2 {
+        font-size: 12px;
+
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .seller-details-main-container{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+.seller-details-main-container{
+    width: 70vw;
+}
+}
