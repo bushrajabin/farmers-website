@@ -7,6 +7,7 @@ import Signup from "./components/SignUp/Signup";
 import Buyer from "./components/BuyerSignup/Buyer";
 import Seller from "./components/SellerSignup/Seller";
 import SellerDetails from "./components/SellerSignup/SellerDetails";
+import Profile from "./components/Profile/Profile";
 import { ToastContainer } from "react-toastify";
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/buyer" element={<Buyer/>}/>
           <Route path="/seller" element={<Seller/>}/>
           <Route path="/details" element={<SellerDetails/>}/>
+          <Route path="/profile" element={<Profile/>}/>
 
         </Routes>
       </BrowserRouter>

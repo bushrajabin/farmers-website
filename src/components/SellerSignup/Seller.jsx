@@ -5,11 +5,11 @@ import { GrFormNextLink } from "react-icons/gr";
 import { useNavigate } from "react-router-dom";
 
 function Seller() {
-    const navigate=useNavigate()
+  const navigate = useNavigate();
 
-    const nextbtn=()=>{
-        navigate("/details")
-    }
+  const nextbtn = () => {
+    navigate("/details");
+  };
   return (
     <>
       <div></div>
@@ -34,7 +34,9 @@ function Seller() {
             );
           })}
         </div>
-        <button className="submit-next-button" onClick={nextbtn}>Submit and next <GrFormNextLink/></button>
+        <button className="submit-next-button" onClick={nextbtn}>
+          Submit and next <GrFormNextLink />
+        </button>
       </div>
     </>
   );

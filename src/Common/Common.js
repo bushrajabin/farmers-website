@@ -86,7 +86,31 @@ export const BankDetails = [
     input: "File",
   },
   {
-    label:"Upload your Adhar Card*",
-    input:"file"
-  }
+    label: "Upload your Adhar Card*",
+    input: "File",
+  },
+];
+
+// USER PROFILE ICONS
+import { IoSettings } from "react-icons/io5";
+import { PiLockKeyFill } from "react-icons/pi";
+import { FaCartPlus } from "react-icons/fa";
+import { AiOutlineLogout } from "react-icons/ai";
+export const profile = [
+  {
+    icon:IoSettings,
+    title: "Profile Setting",
+  },
+  {
+    icon:PiLockKeyFill,
+    title: "Change password",
+  },
+  {
+    icon:FaCartPlus,
+    title: "My Store",
+  },
+  {
+    icon:AiOutlineLogout,
+    title: "logout",
+  },
 ];
