@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { profile } from "../../Common/Common";
 import { FaRegUserCircle } from "react-icons/fa";
-import "./profile.css";
+import "./Profile.css";
 
 function Profile() {
   const [selectedFile, setSelectedFile] = useState(null); // State to store the uploaded file
