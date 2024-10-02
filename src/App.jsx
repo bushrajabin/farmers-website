@@ -8,6 +8,7 @@ import Buyer from "./components/BuyerSignup/Buyer";
 import Seller from "./components/SellerSignup/Seller";
 import SellerDetails from "./components/SellerSignup/SellerDetails";
 import Profile from "./components/Profile/Profile";
+import SellerHome from "./components/SellerHomePage/SellerHome";
 import { ToastContainer } from "react-toastify";
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/seller" element={<Seller/>}/>
           <Route path="/details" element={<SellerDetails/>}/>
           <Route path="/profile" element={<Profile/>}/>
+          <Route path="/sellerHome" element={<SellerHome/>}/>
 
         </Routes>
       </BrowserRouter>

@@ -24,7 +24,7 @@ function SellerDetails() {
   };
 
   const submitDetails = () => {
-    navigate("/profile");
+    navigate("/sellerHome");
   };
 
   return (
