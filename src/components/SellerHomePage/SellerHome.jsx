@@ -6,7 +6,6 @@ import { FaRegUser } from "react-icons/fa";
 import "./SellerHome.css";
 import { uploads } from "../../Common/Common";
 import { footer } from "../../Common/Common";
-
 function SellerHome() {
   return (
     <div className="seller-main-div">

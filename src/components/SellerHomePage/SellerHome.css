@@ -213,10 +213,12 @@
         width: 20px;
         height: 20px;
     }
-    .recent-top-div>h2{
+
+    .recent-top-div>h2 {
         font-size: 15px;
     }
-    .recent-top-div>button{
+
+    .recent-top-div>button {
         font-size: 15px;
     }
 
@@ -253,8 +255,72 @@
         font-size: 10px;
     }
 
-    .footer-icons{
+    .footer-icons {
         width: 15px;
         height: 15px;
+    }
+}
+
+
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .searchbar {
+        width: 60vw;
+    }
+
+    .icons {
+        width: 15vw;
+    }
+    .home-image>img{
+        height: 30vh;
+    }
+
+    .gallery-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .gallery-item>img {
+        width: 86px;
+        height: 90px;
+    }
+    .sell-div,.rent-div{
+        width: 50vw;
+    }
+
+    .sell-div>p,.rent-div>p{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .searchbar {
+        width: 60vw;
+    }
+
+    .icons {
+        width: 15vw;
+    }
+    .home-image>img{
+        height: 40vh;
+    }
+
+    .gallery-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .gallery-item>img {
+        width: 86px;
+        height: 90px;
+    }
+    .sell-div,.rent-div{
+        width: 50vw;
+    }
+
+    .sell-div>p,.rent-div>p{
+        font-size: 25px;
     }
 }
