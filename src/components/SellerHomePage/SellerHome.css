@@ -222,6 +222,10 @@
         font-size: 15px;
     }
 
+    .home-image>img{
+        height: 30vh;
+        margin-top: 50px;
+    }
     .gallery-div {
         display: flex;
         flex-direction: row;
@@ -303,7 +307,7 @@
         width: 15vw;
     }
     .home-image>img{
-        height: 40vh;
+        height: 60vh;
     }
 
     .gallery-div {
