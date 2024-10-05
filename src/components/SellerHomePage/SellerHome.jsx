@@ -14,12 +14,12 @@ function SellerHome() {
       <div className="sellerhome-nav">
         <img src="./images/logo.png" alt="" />
         <div className="searchbar">
-          <CiSearch size={23} />
+          <CiSearch size={23} className="icon1" />
           <input type="text" placeholder="search" />
-          <IoMic size={24} />
+          <IoMic size={24} className="icon2" />
         </div>
         <div className="icons">
-          <FaRegBell size={24} />
+          <FaRegBell size={24} className="notification" />
           <FaRegUser size={24} className="user-profile-icon" />
         </div>
       </div>
@@ -67,7 +67,7 @@ function SellerHome() {
           const { icon: Icon, title } = data;
           return (
             <div className="footer-options" key={index}>
-              <Icon size={27} />
+              <Icon size={27}  className="footer-icons"/>
               <h2>{title}</h2>
             </div>
           );
