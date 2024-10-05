@@ -98,19 +98,56 @@ import { FaCartPlus } from "react-icons/fa";
 import { AiOutlineLogout } from "react-icons/ai";
 export const profile = [
   {
-    icon:IoSettings,
+    icon: IoSettings,
     title: "Profile Setting",
   },
   {
-    icon:PiLockKeyFill,
+    icon: PiLockKeyFill,
     title: "Change password",
   },
   {
-    icon:FaCartPlus,
+    icon: FaCartPlus,
     title: "My Store",
   },
   {
-    icon:AiOutlineLogout,
+    icon: AiOutlineLogout,
     title: "logout",
+  },
+];
+
+// For sellerHome page recent uploads items
+
+export const uploads = [
+  "/images/banana.jpg",
+  "/images/garlic.jpg",
+  "/images/potato.jpg",
+  "/images/onion.jpg",
+  "/images/Tomato.jpg",
+  "/images/strawberry.jpg",
+  "/images/tractor.jpg",
+];
+
+// For seller footer
+import { GrHome } from "react-icons/gr";
+import { GrHistory } from "react-icons/gr";
+import { MdOutlineLeaderboard } from "react-icons/md";
+import { GiFruitBowl } from "react-icons/gi";
+
+export const footer = [
+  {
+    icon: GrHome,
+    title: "Home",
+  },
+  {
+    icon: GrHistory,
+    title: "History",
+  },
+  {
+    icon: MdOutlineLeaderboard,
+    title: "Leaderboard",
+  },
+  {
+    icon: GiFruitBowl,
+    title: "Fresh Farm",
   },
 ];
