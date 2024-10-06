@@ -9,8 +9,8 @@ import Seller from "./components/SellerSignup/Seller";
 import SellerDetails from "./components/SellerSignup/SellerDetails";
 import Profile from "./components/Profile/Profile";
 import SellerHome from "./components/SellerHomePage/SellerHome";
+import BuyerHome from "./components/BuyerHomePage/BuyerHome";
 import { ToastContainer } from "react-toastify";
-
 
 function App() {
   return (
@@ -20,16 +20,15 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/buyer" element={<Buyer/>}/>
-          <Route path="/seller" element={<Seller/>}/>
-          <Route path="/details" element={<SellerDetails/>}/>
-          <Route path="/profile" element={<Profile/>}/>
-          <Route path="/sellerHome" element={<SellerHome/>}/>
-
+          <Route path="/buyer" element={<Buyer />} />
+          <Route path="/seller" element={<Seller />} />
+          <Route path="/details" element={<SellerDetails />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/sellerHome" element={<SellerHome />} />
+          <Route path="/buyerHome" element={<BuyerHome />} />
         </Routes>
       </BrowserRouter>
 
-      
       {/* This is for toastify */}
       <ToastContainer
         position="top-left"

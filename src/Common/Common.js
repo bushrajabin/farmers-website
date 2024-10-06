@@ -151,3 +151,12 @@ export const footer = [
     title: "Fresh Farm",
   },
 ];
+
+
+
+// PRODUCTS FOR RENT 
+export const RentProducts=[
+  {
+    
+  }
+]

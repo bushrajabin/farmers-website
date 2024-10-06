@@ -3,12 +3,11 @@ import "./Buyer.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { buyerField } from "../../Common/Common";
-
 import { useNavigate } from "react-router-dom";
 function Buyer() {
   const navigate = useNavigate();
   const signup = () => {
-    navigate("/");
+    navigate("/buyerHome");
     toast.success("Signup successfully!!!!");
   };
   return (
