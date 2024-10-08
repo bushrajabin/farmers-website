@@ -152,11 +152,68 @@ export const footer = [
   },
 ];
 
-
-
-// PRODUCTS FOR RENT 
-export const RentProducts=[
+// PRODUCTS FOR RENT
+import { MdOutlineCurrencyRupee } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
+import { IoIosAlarm } from "react-icons/io";
+export const SellProduct = [
   {
-    
-  }
-]
+    id: 1,
+    name: "Cauliflower",
+    image: "/images/image1.jpg",
+    icon: [
+      {
+        component: MdOutlineCurrencyRupee,
+        title: "Price",
+      },
+      {
+        component: IoLocationSharp,
+        title: "Kisanganj",
+      },
+      {
+        component: IoIosAlarm,
+        title: "2hr ago",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Tomato",
+    image: "/images/Tomato.jpg",
+    icon: [
+      {
+        component: MdOutlineCurrencyRupee,
+        title: "Price",
+      },
+      {
+        component: IoLocationSharp,
+        title: "Kisanganj",
+      },
+      {
+        component: IoIosAlarm,
+        title: "2hr ago",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Onion",
+    image:"images/onion.jpg",
+    icon: [
+      {
+        component: MdOutlineCurrencyRupee,
+        title: "Price",
+      },
+      {
+        component: IoLocationSharp,
+        title: "Kisanganj",
+      },
+      {
+        component: IoIosAlarm,
+        title: "2hr ago",
+      },
+    ],
+  },
+];
+
+

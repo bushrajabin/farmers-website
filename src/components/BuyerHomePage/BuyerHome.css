@@ -8,7 +8,7 @@
 }
 
 
-/* Seller  nav */
+/* buyer nav  */
 .buyerhome-nav {
     background-color: #9CD4AC;
     display: flex;
@@ -95,49 +95,79 @@
 .post-div {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 10px;
+    width: 100vw;
 }
 
-.sell-div,
-.rent-div {
-    background-color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+.product-card {
+    background-color: rgb(139, 131, 131);
     margin: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 5px;
+    border-radius: 6px;
 }
 
-.sell-div>img,
-.rent-div>img {
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    border-radius: 100px;
+.product-card>h2 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    text-align: center;
 }
 
-.sell-div>p,
-.rent-div>p {
-    font-size: 18px;
+.product-icon {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 19px;
+    align-items: center;
+    padding: 6px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sell-product-main-div,
+.rent-product-main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 50vw; */
+    margin: 10px;
+}
+
+.sell-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50vw;
+    justify-content: space-around;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
     letter-spacing: 2px;
 }
 
-.sell-btn,
-.rent-btn {
+.sell-button {
     background-color: #9CD4AC;
-    padding: 8px;
+    padding: 2px;
+    width: 8vw;
     border-radius: 10px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 20px;
-
 }
+
+.sell-product-div,
+.rent-product-div {
+    display: flex;
+    flex-direction: row;
+    margin: 14px;
+    padding: 10px;
+}
+
+.product-image {
+    width: 190px;
+    height: 150px;
+    background-color: white;
+    object-fit: cover;
+    /* border-radius: 100px; */
+}
+
+
 
 
 /* MEDIA QUERY */
@@ -176,30 +206,17 @@
         height: 20px;
     }
 
-    .recent-top-div>h2 {
-        font-size: 15px;
-    }
-
-    .recent-top-div>button {
-        font-size: 15px;
-    }
-
-    .home-image>img{
+    .home-image>img {
         height: 30vh;
         /* margin-top: 50px; */
     }
-    .gallery-div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 1px;
+
+    .sell-header {
+        width: 100vw;
     }
 
-    .gallery-item>img {
-        width: 60px;
-        height: 60px;
-        object-fit: cover;
+    .sell-button {
+        width: 30vw;
     }
 
     .post-div {
@@ -207,16 +224,24 @@
         flex-direction: column;
     }
 
-    .sell-div,
-    .rent-div {
-        width: 90vw;
+    .sell-product-div,
+    .rent-product-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: center;
     }
 
-    .sell-div>p,
-    .rent-div>p {
-        font-size: 15px;
+    .product-card {
+        width: 45vw;
+        margin: 4px;
     }
 
+    .product-image{
+        width: 200px;
+        height: 100px;
+    }
     .footer-options>h2 {
         font-size: 10px;
     }
@@ -237,25 +262,26 @@
     .icons {
         width: 15vw;
     }
-    .home-image>img{
+
+    .home-image>img {
         height: 30vh;
     }
 
-    .gallery-div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .sell-header {
+        width: 100vw;
     }
 
-    .gallery-item>img {
-        width: 86px;
-        height: 90px;
+    .sell-button {
+        width: 30vw;
     }
-    .sell-div,.rent-div{
+
+    .sell-div,
+    .rent-div {
         width: 50vw;
     }
 
-    .sell-div>p,.rent-div>p{
+    .sell-div>p,
+    .rent-div>p {
         font-size: 25px;
     }
 }
@@ -268,25 +294,26 @@
     .icons {
         width: 15vw;
     }
-    .home-image>img{
+
+    .home-image>img {
         height: 60vh;
     }
 
-    .gallery-div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .sell-header {
+        width: 100vw;
     }
 
-    .gallery-item>img {
-        width: 86px;
-        height: 90px;
+    .sell-button {
+        width: 30vw;
     }
-    .sell-div,.rent-div{
+
+    .sell-div,
+    .rent-div {
         width: 50vw;
     }
 
-    .sell-div>p,.rent-div>p{
+    .sell-div>p,
+    .rent-div>p {
         font-size: 25px;
     }
 }
