@@ -132,6 +132,10 @@ import { GrHome } from "react-icons/gr";
 import { GrHistory } from "react-icons/gr";
 import { MdOutlineLeaderboard } from "react-icons/md";
 import { GiFruitBowl } from "react-icons/gi";
+import { FaShoppingCart } from "react-icons/fa";
+
+// Assuming you have a variable 'isBuyerLoggedIn' that tracks if the user is logged in as a buyer.
+const isBuyerLoggedIn = true; // Change this based on your logic
 
 export const footer = [
   {
@@ -143,8 +147,8 @@ export const footer = [
     title: "History",
   },
   {
-    icon: MdOutlineLeaderboard,
-    title: "Leaderboard",
+    icon: isBuyerLoggedIn ? MdOutlineLeaderboard : FaShoppingCart, // Conditionally show icon
+    title: isBuyerLoggedIn ? "leaderboard" : "cart", // Conditionally change title
   },
   {
     icon: GiFruitBowl,
@@ -198,7 +202,7 @@ export const SellProduct = [
   {
     id: 3,
     name: "Onion",
-    image:"images/onion.jpg",
+    image: "images/onion.jpg",
     icon: [
       {
         component: MdOutlineCurrencyRupee,
@@ -215,5 +219,3 @@ export const SellProduct = [
     ],
   },
 ];
-
-
