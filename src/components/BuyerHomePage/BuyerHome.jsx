@@ -3,9 +3,15 @@ import { CiSearch } from "react-icons/ci";
 import { IoMic } from "react-icons/io5";
 import { FaRegBell, FaRegUser } from "react-icons/fa";
 import { footer, SellProduct } from "../../Common/Common";
+import { useNavigate } from "react-router-dom";
 import "./BuyerHome.css";
 
 function BuyerHome() {
+  const navigate=useNavigate()
+
+  const toprofile=()=>{
+    navigate("/profile")
+  }
   return (
     <div className="buyer-main-div">
       {/* Navigation Bar */}
@@ -18,7 +24,7 @@ function BuyerHome() {
         </div>
         <div className="icons">
           <FaRegBell size={24} className="notification" />
-          <FaRegUser size={24} className="user-profile-icon" />
+          <FaRegUser size={24} className="user-profile-icon" onClick={toprofile} />
         </div>
       </div>
 

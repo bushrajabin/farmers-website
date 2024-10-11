@@ -26,6 +26,8 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/sellerHome" element={<SellerHome />} />
           <Route path="/buyerHome" element={<BuyerHome />} />
+          <Route path="/profile" element={<Profile/>}/>
+          
         </Routes>
       </BrowserRouter>
 
